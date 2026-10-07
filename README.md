@@ -6,6 +6,10 @@ A portfolio webpage with CSS and responsive design.
 
 \# Link to Deployed Page
 
+Deployed HTML Link:
+
+\# GitHub Repo Link:
+
 
 
 \## Problems
