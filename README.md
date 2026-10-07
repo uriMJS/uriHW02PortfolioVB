@@ -1,14 +1,14 @@
-# \# uriHW02PortfolioVB - Portfolio
+# uriHW02PortfolioVB - Portfolio
 
 A portfolio webpage with CSS and responsive design.
 
 
 
-\# Link to Deployed Page
+# Link to Deployed Page
 
 Deployed HTML Link:
 
-\# GitHub Repo Link:
+# GitHub Repo Link:
 
 
 
