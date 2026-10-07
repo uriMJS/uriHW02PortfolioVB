@@ -8,7 +8,7 @@ A simple portfolio webpage with CSS and responsive design.
 
 
 
-
+\## Problems  
 
 Some problems to overcome ... missing my D drive tonight (might be at library).  
 Can't clone to C: ... git is unrecognized.
