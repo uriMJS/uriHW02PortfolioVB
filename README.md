@@ -1,7 +1,9 @@
 # uriHW02PortfolioVB - Portfolio
+
 A portfolio webpage with CSS and responsive design.
 
-## Links 
+## Links
+
 Deployed HTML Link:
 GitHub Repo Link:
 
@@ -17,6 +19,8 @@ Biggest problem is that I can't tell what the project entails.
 Do get pretty good idea of project goals from original HW2 repo, README.md
 
 
+
+\## Another 2 pound heading
 
 
 
