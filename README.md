@@ -1,18 +1,11 @@
 # uriHW02PortfolioVB - Portfolio
-
 A portfolio webpage with CSS and responsive design.
 
-
-
-# Link to Deployed Page
-
+## Links 
 Deployed HTML Link:
+GitHub Repo Link:
 
-# GitHub Repo Link:
-
-
-
-\## Problems
+## Problems
 
 Some problems to overcome ... missing my D drive tonight (might be at library).  
 Can't clone to C: ... git is unrecognized.
