@@ -1,6 +1,6 @@
 # \# uriHW02PortfolioVB - Portfolio
 
-A simple portfolio webpage with CSS and responsive design.
+A portfolio webpage with CSS and responsive design.
 
 
 
@@ -8,7 +8,7 @@ A simple portfolio webpage with CSS and responsive design.
 
 
 
-\## Problems  
+\## Problems
 
 Some problems to overcome ... missing my D drive tonight (might be at library).  
 Can't clone to C: ... git is unrecognized.
@@ -31,7 +31,7 @@ Do get pretty good idea of project goals from original HW2 repo, README.md
 
 &#x20; (bb) responsive layout - flexbox, media queries, CSS-variables.
 
-&#x20; (a) presented with the developer's name,a recent photo or avatar, and links to sections about them, their work, and how  to contact them
+&#x20; (a) presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how  to contact them
 
 &#x20; (b) click one of the links in the navigation THEN the UI scrolls to the corresponding section
 
