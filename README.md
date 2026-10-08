@@ -11,15 +11,14 @@ GitHub Repo Link:
 
 Some problems to overcome ... missing my D drive tonight (might be at library).  
 Can't clone to C: ... git is unrecognized.
-
 Downloaded git to the C Drive.
+Saving in notepad resulted in /# at beginning of line, instead of #. 
+Eventually downloaded notePad++. Problem fixed. 
 
 &#x20;  
 Biggest problem is that I can't tell what the project entails.  
 Do get pretty good idea of project goals from original HW2 repo, README.md
 
-
-## Yet another 2 pound heading. 
 
 ## Acceptance Criteria
 
