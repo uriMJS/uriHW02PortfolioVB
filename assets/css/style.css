@@ -1,4 +1,9 @@
 /* hw 02 Porfolio - MJS 10.7.26 */
-* { background-color: blue;
+* { background-color: powderblue;
   color: black;
+}
+
+/* header and nav */
+.nav-item {
+	width: 20px;
 }
