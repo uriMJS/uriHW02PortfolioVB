@@ -5,5 +5,8 @@
 
 /* header and nav */
 .nav-item {
-	width: 20px;
+	width: 10px;
+}
+.nav-item2 {
+	width: 250px;
 }
