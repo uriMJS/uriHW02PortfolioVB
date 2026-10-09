@@ -1,9 +1,16 @@
 /* hw 02 Porfolio - MJS 10.7.26 */
 * { background-color: powderblue;
   color: black;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* header and nav */
+.header {
+	padding: 20px; 
+	background-color: green; 
+}
 .header h1 {
 	display: inline-block;
 	margin: 15px; 
@@ -26,4 +33,7 @@
 /* need this (and surrounding div to prevent image from being entire page width */
 .my-image-small {
 	max-width: 100%;
+}
+.my-image-big {
+	max-width: 80%;
 }
