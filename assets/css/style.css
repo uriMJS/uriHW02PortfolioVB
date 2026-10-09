@@ -8,27 +8,50 @@
 
 /* header and nav */
 .header {
-	padding: 20px; 
+	padding: 24px; 
 	background-color: green; 
+	color: red;
 }
 .header h1 {
-	display: inline-block;
+	/* display: inline-block; */ 
 	margin: 15px; 
 }
-/* need float:right so li's are to right of <h1> name */ 
-.header nav {
-	float: right; 
+
+.navbar {
+	/* nav should have brand on left, menu on right */ 
+	/* But flex 0 1 auto (or even flex 0 or flex 1) display links below names */ 
+	/* But flex-grow 0; flex-shrink: 1; flex-basis: auto; works!
+	/* display: flex 0 1 auto;  /* flex-grow, flex-shrink, flex-basis (start value) */ 
+	display: flex;
+	flex-grow: 0; 
+	flex-shrink: 1; 
+	flex-basis: auto;
+	justify-content: space-between;  /* main axis, brand left, menu right */ 
+	align-items: center;            /* everything vertically centered */
+	padding: 0 24px;
+	height: 64px;
+	/* float: right; */  /* used float:right so li's are to right of <h1> name */ 
+}
+.xxnavbar .xxlinks {  /* nav ul doesn't work here */ 
+	display: flex 0 1 auto; /* flex-grow, flex-shrink, flex-basis */ 
+	list-style: none; 
+}
+.navbar .links {
+  /* flex 0, nor flex 0 1 auto don't work => displays ul links in vertical list below userName */ 
+  display: flex;     /* the link list is itself a flex row */
+  gap: 24px;
+  list-style: none;
 }
 .header nav ul li {
-	display: inline-block;
+	/* display: inline-block; */
 	margin: 15px; 
 }
 .nav-item {
-	width: 50px;
-	style: inline;
+	width: 30px;
+	/* style: inline; */
 }
 .nav-item2 {
-	width: 50px;
+	width: 30px;
 }
 /* need this (and surrounding div to prevent image from being entire page width */
 .my-image-small {
