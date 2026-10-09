@@ -4,12 +4,26 @@
 }
 
 /* header and nav */
+.header h1 {
+	display: inline-block;
+	margin: 15px; 
+}
+/* need float:right so li's are to right of <h1> name */ 
+.header nav {
+	float: right; 
+}
+.header nav ul li {
+	display: inline-block;
+	margin: 15px; 
+}
 .nav-item {
-	width: 10px;
+	width: 50px;
+	style: inline;
 }
 .nav-item2 {
-	width: 250px;
+	width: 50px;
 }
+/* need this (and surrounding div to prevent image from being entire page width */
 .my-image-small {
 	max-width: 100%;
 }
