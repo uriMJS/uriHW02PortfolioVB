@@ -56,23 +56,26 @@
 	height: 100%; /* .links area height still gets very large with auto, and with 100% */ 
 	margin: 10px; 
 	align-items: center; 
-	style: inline; 
+	/* style: inline; */ 
+	display: block; 
 	border: black solid 2pt; 
 	/* background-color: green; */
 }
 /* Extra div causes photo to blow up size. Setting height or max-height to 100% or 30% doesnt work */ 
-/* display:block (up-down) also blows up photo, unless max-height set.
+/* display:block (up-down) also blows up photo, unless max-height set. */ 
 nav-li-photo {   /* this id includes photo and text
-	max-height: 100%; 
-	display: block;  /* display photo and text up-down axis */ 
+	/* max-height: 100%; */ 
+	display: block;  /* display photo and text up-down axis. Cant get this to work. */ 
 }
 nav-li-photo a {   /* this id includes photo and text
 	/* max-height: 100%; */ 
-	display: block;  /* display photo and text up-down axis */ 
+	display: block;  /* display photo and text up-down axis. Cant get this to work. */ 
 }
 /* Extra div causes photo to blow up size. Setting height or max-height to 100% or 30% doesnt work */ 
-nav-li-photo div {
-	background-color: red; 
+.div-small-photo {
+	border: red solid 6pt;  /* this display, but only at top?? */
+	max-height: 10%; 
+	display: block; 
 	/* max-height: 100%; */ 
 }
 .nav-item a {
