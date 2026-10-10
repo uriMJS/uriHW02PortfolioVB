@@ -41,15 +41,19 @@
   display: flex;     /* the link list is itself a flex row */
   gap: 24px;
   list-style: none;
+  background-color: purple;
 }
-.header nav ul li {
-	/* display: inline-block; */
+/* .header nav ul li {
+	/* background-color: pink;  /* does show up */
+/* } */ 
+.nav-item {  /* nav-item equivalent to .header nav ul li */ 
+	width: 40px;  /* wont work without this */ 
 	margin: 15px; 
+	style: inline; 
+	background-color: green;
 }
-.nav-item {
-	width: 30px; 
-	/* style: inline; */
-	background-color: purple;
+.nav-item a {
+	background-color: blue;  /* does show up */ 
 }
 .nav-item2 {
 	width: 30px;
