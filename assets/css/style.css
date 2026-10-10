@@ -28,8 +28,8 @@
 	flex-basis: auto;
 	justify-content: space-between;  /* main axis, brand left, menu right */ 
 	align-items: center;            /* everything vertically centered */
-	padding: 0 20px;
-	height: 64px;
+	padding: 0 10px;
+	height: 60px;
 	/* float: right; */  /* used float:right so li's are to right of <h1> name */ 
 }
 .xxnavbar .xxlinks {  /* nav ul doesn't work here */ 
@@ -41,10 +41,10 @@
   display: flex;     /* the link list is itself a flex row */
   justify-content: space-between; 
   align-items: center; 
-  gap: 20px;
+  gap: 10px;
   list-style: none;
   background-color: blue;
-  height: 100%;  /* 100% of navbar height => currently 64. Already has 20px padding */ 
+  height: 100%;  /* 100% of navbar height => currently 64. Already has 10px padding */ 
 }
 /* .header nav ul li {
 	/* background-color: pink;  /* does show up */
@@ -54,20 +54,35 @@
     /* key seems to be to make parent container (.navbar .links height 100% also */ 	
 	width: auto;  /* wont work without this, nor does width: auto work */ 
 	height: 100%; /* .links area height still gets very large with auto, and with 100% */ 
-	margin: 15px; 
+	margin: 10px; 
+	align-items: center; 
 	style: inline; 
 	border: black solid 2pt; 
 	/* background-color: green; */
 }
+/* Extra div causes photo to blow up size. Setting height or max-height to 100% or 30% doesnt work */ 
+/* display:block (up-down) also blows up photo, unless max-height set.
+nav-li-photo {   /* this id includes photo and text
+	max-height: 100%; 
+	display: block;  /* display photo and text up-down axis */ 
+}
+nav-li-photo a {   /* this id includes photo and text
+	/* max-height: 100%; */ 
+	display: block;  /* display photo and text up-down axis */ 
+}
+/* Extra div causes photo to blow up size. Setting height or max-height to 100% or 30% doesnt work */ 
+nav-li-photo div {
+	background-color: red; 
+	/* max-height: 100%; */ 
+}
 .nav-item a {
 	/* background-color: blue;  /* does show up */ 
 }
-.nav-item2 {
-	width: 30px;
-}
-/* need this (and surrounding div to prevent image from being entire page width */
+
+/* need this (but not surrounding div)to prevent image from being entire page width */
+/* max-width does not work. */ 
 .my-image-small {
-	max-width: 100%;
+	max-height: 65%; /* save 35% for a Photo Heading */ 
 }
 .my-image-big {
 	max-width: 80%;
