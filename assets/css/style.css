@@ -1,4 +1,8 @@
 /* hw 02 Porfolio - MJS 10.7.26 */
+:root { --headfoot-bg-color: green;  /* Global Value */ 
+	    --main-bg-color: powderblue; 
+} 
+
 * { /* background-color: powderblue; */
   color: black;
   padding: 0;
@@ -9,7 +13,7 @@
 /* header and nav */
 .header {
 	padding: 24px; 
-	background-color: green; 
+	background-color: var(--headfoot-bg-color, black); 
 	color: red;
 }
 .header h1 {
@@ -89,4 +93,8 @@
 }
 .my-image-big {
 	max-width: 80%;
+}
+
+/* Footer */
+footer { background-color: var(--headfoot-bg-color, black); 
 }
