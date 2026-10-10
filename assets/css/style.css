@@ -1,5 +1,5 @@
 /* hw 02 Porfolio - MJS 10.7.26 */
-* { background-color: powderblue;
+* { /* background-color: powderblue; */
   color: black;
   padding: 0;
   margin: 0;
@@ -28,7 +28,7 @@
 	flex-basis: auto;
 	justify-content: space-between;  /* main axis, brand left, menu right */ 
 	align-items: center;            /* everything vertically centered */
-	padding: 0 24px;
+	padding: 0 20px;
 	height: 64px;
 	/* float: right; */  /* used float:right so li's are to right of <h1> name */ 
 }
@@ -39,21 +39,28 @@
 .navbar .links {
   /* flex 0, nor flex 0 1 auto don't work => displays ul links in vertical list below userName */ 
   display: flex;     /* the link list is itself a flex row */
-  gap: 24px;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px;
   list-style: none;
-  background-color: purple;
+  background-color: blue;
+  height: 100%;  /* 100% of navbar height => currently 64. Already has 20px padding */ 
 }
 /* .header nav ul li {
 	/* background-color: pink;  /* does show up */
 /* } */ 
 .nav-item {  /* nav-item equivalent to .header nav ul li */ 
-	width: 40px;  /* wont work without this */ 
+	/* width: auto does have varying border, but no height => height goes wild ... arghh */
+    /* key seems to be to make parent container (.navbar .links height 100% also */ 	
+	width: auto;  /* wont work without this, nor does width: auto work */ 
+	height: 100%; /* .links area height still gets very large with auto, and with 100% */ 
 	margin: 15px; 
 	style: inline; 
-	background-color: green;
+	border: black solid 2pt; 
+	/* background-color: green; */
 }
 .nav-item a {
-	background-color: blue;  /* does show up */ 
+	/* background-color: blue;  /* does show up */ 
 }
 .nav-item2 {
 	width: 30px;
