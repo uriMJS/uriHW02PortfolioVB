@@ -71,7 +71,7 @@ nav-li-photo a {   /* this id includes photo and text
 	/* max-height: 100%; */ 
 	display: block;  /* display photo and text up-down axis. Cant get this to work. */ 
 }
-/* Extra div causes photo to blow up size. Setting height or max-height to 100% or 30% doesnt work */ 
+/* Extra div causes photo to blow up size. Setting height or max-height to 100% or 10% doesnt work */ 
 .div-small-photo {
 	border: red solid 6pt;  /* this display, but only at top?? */
 	max-height: 10%; 
@@ -85,7 +85,7 @@ nav-li-photo a {   /* this id includes photo and text
 /* need this (but not surrounding div)to prevent image from being entire page width */
 /* max-width does not work. */ 
 .my-image-small {
-	max-height: 65%; /* save 35% for a Photo Heading */ 
+	max-height: 100%; /* save 35% if a Photo Heading */ 
 }
 .my-image-big {
 	max-width: 80%;
