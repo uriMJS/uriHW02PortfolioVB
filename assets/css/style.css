@@ -47,8 +47,9 @@
 	margin: 15px; 
 }
 .nav-item {
-	width: 30px;
+	width: 30px; 
 	/* style: inline; */
+	background-color: purple;
 }
 .nav-item2 {
 	width: 30px;
