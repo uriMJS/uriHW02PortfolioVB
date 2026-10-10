@@ -28,7 +28,7 @@
 	flex-basis: auto;
 	justify-content: space-between;  /* main axis, brand left, menu right */ 
 	align-items: center;            /* everything vertically centered */
-	padding: 0 10px;
+	padding: 0 5px;
 	height: 60px;
 	/* float: right; */  /* used float:right so li's are to right of <h1> name */ 
 }
@@ -56,25 +56,25 @@
 	height: 100%; /* .links area height still gets very large with auto, and with 100% */ 
 	margin: 10px; 
 	align-items: center; 
-	/* style: inline; */ 
 	display: block; 
 	border: black solid 2pt; 
 	/* background-color: green; */
 }
 /* Extra div causes photo to blow up size. Setting height or max-height to 100% or 30% doesnt work */ 
 /* display:block (up-down) also blows up photo, unless max-height set. */ 
-nav-li-photo {   /* this id includes photo and text
-	/* max-height: 100%; */ 
+/* Keys seem to be to avoid extra div, and have both anchor and nav-li-photo max-height 100% */ 
+#nav-li-photo {   /* this id includes photo and text - #=>id */ 
+	max-height: 100%;  
 	display: block;  /* display photo and text up-down axis. Cant get this to work. */ 
 }
-nav-li-photo a {   /* this id includes photo and text
-	/* max-height: 100%; */ 
-	display: block;  /* display photo and text up-down axis. Cant get this to work. */ 
+#nav-li-photo a {   /* this id included photo and text */
+	max-height: 100%;  
+	/* display: block;  /* display photo and text up-down axis. Cant get this to work. */ 
 }
 /* Extra div causes photo to blow up size. Setting height or max-height to 100% or 10% doesnt work */ 
 .div-small-photo {
 	border: red solid 6pt;  /* this display, but only at top?? */
-	max-height: 10%; 
+	max-height: 100%; 
 	display: block; 
 	/* max-height: 100%; */ 
 }
