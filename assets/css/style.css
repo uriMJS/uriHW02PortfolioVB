@@ -1,7 +1,8 @@
 /* hw 02 Porfolio - MJS 10.7.26 */
 :root { --headfoot-bg-color: green;  /* Global Value */ 
 	    --main-bg-color: powderblue; 
-		--navbar-height: 60px; 
+		--navbar-height: 50px;
+		--navbar-height-small: 30px; 
 } 
 
 * { 
@@ -13,13 +14,13 @@
 
 /* header and nav */
 .header {
-	padding: 24px; 
+	padding: 5px; 
 	background-color: var(--headfoot-bg-color, black); 
 	color: red;
 }
 .header h1 {
 	/* display: inline-block; */ 
-	margin: 15px; 
+	margin: 5px; 
 }
 
 .navbar {
@@ -48,7 +49,7 @@
   justify-content: space-between; 
   align-items: center; 
   gap: 5px;
-  list-style: none;
+  list-style: none; 
   height: 100%;  /* 100% of navbar height => currently 60. Already has 10px padding */ 
 }
 /* .header nav ul li {
@@ -61,7 +62,8 @@
 	height: 100%; /* .links area height still gets very large with auto, and with 100% */ 
 	margin: 5px; 
 	display: flex;  /* needed to make align-items: center working */ 
-	align-items: center;  /* center vertically */ 
+	justify-content: space-between; 
+	align-items: center;  /* center vertically (also requires some height) */ 
 	/* display: block; /* This messed up flex center(vert) */
 	padding: 2px; /* padding inside border */
 	border: black solid 2pt; 
@@ -80,7 +82,12 @@
 	display: flex;
 	align-items: center;  /* center vertically */ 
 	height: 100%;         /* need some height here to vertically center */ 
-	background-color: pink;  
+	background-color: pink; 
+	/* justify-content: space-between; */ 
+	/* justify-content: center; */ 
+}
+.center-hori {  /* helper class - for block layout */ 	
+	text-align: center; 
 }
 /* Extra div causes photo to blow up size. Setting height or max-height to 100% or 30% doesnt work */ 
 /* display:block (up-down) also blows up photo, unless max-height set. */ 
@@ -112,7 +119,7 @@
 	max-width: 80%;
 }
 
-/* this is for smaller screens */  
+/* this is for medium screens */  
 @media screen and (max-width: 600px) {
   body {
     background-color: lightgreen;
@@ -121,7 +128,8 @@
 	background-color: darkgreen; 
   }
   .navbar {  /* effectively put name at top, links below name */ 
-	  display: block; 
+	  /* display: block; */
+	  flex-direction: column;  /* up-down display flow */ 
 	  height: auto; 
 	  width: auto; 
   } 
@@ -132,14 +140,31 @@
 
 /* this is for the smallest screens */ 
 @media screen and (max-width: 486px) {
+  body {
+    background-color: powderblue;
+  }
+  #main {  /* can have multiple selectors inside 1 media query */ 
+	background-color: darkblue; 
+  }
+  .navbar {
+	  padding: 0 2px; 
+  } 
   .navbar .links {
-	  display: block; 
+	  /* display: block;  /* does make buttons flow up-down, but hard to center */ 
+	  flex-direction: column;  /* up-down display flow */
+	  justify-content: center; 
 	  height: auto; 
-	  width: 40%;  
+	  width: 30%;  /* 30% possible, auto sucks up entire width */ 
+	  gap: 0px; 
+	  /* text-align: center; /* for block display */
   } 
   .nav-item {
-	  height: var(--navbar-height, 60px);  
-	  width: auto; 
+	  /* display: block; */ 
+	  height: var(--navbar-height-small, 40px);  
+	  width: auto;   // 60px results in uncentered text
+	  text-align: center; 
+	  /* display: flex;
+	  justify-content: space-between;  /* does not center horizontally */ 
   } 
 }
 
