@@ -60,9 +60,9 @@
 	width: auto;   
 	height: 100%; /* .links area height still gets very large with auto, and with 100% */ 
 	margin: 5px; 
-	display: flex;  /* seem to need to make align-items: center work */ 
+	display: flex;  /* needed to make align-items: center working */ 
 	align-items: center;  /* center vertically */ 
-	display: block; /* This messed up flex center(vert) */
+	/* display: block; /* This messed up flex center(vert) */
 	padding: 2px; /* padding inside border */
 	border: black solid 2pt; 
 	border-radius: 10px;  /* Makes clickable areas look like buttons */ 
@@ -75,7 +75,8 @@
 	/* background-color: red;  */
 }
 .center-vert {  /* helper class */ 
-	/* Works with <a> <small(center-vert)> text, <a center-vert> <small> text, and <a center-vert> text */  
+	/* Works with <a> <small(center-vert)> text, <a center-vert> <small> text, and <a center-vert> text */ 
+    /* Even works with <li(center-vert)> <a><small> text */ 	
 	display: flex;
 	align-items: center;  /* center vertically */ 
 	height: 100%;         /* need some height here to vertically center */ 
