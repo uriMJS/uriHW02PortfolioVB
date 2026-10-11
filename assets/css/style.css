@@ -46,9 +46,8 @@
   display: flex;     /* the link list is itself a flex row */
   justify-content: space-between; 
   align-items: center; 
-  gap: 10px;
+  gap: 5px;
   list-style: none;
-  background-color: blue;
   height: 100%;  /* 100% of navbar height => currently 60. Already has 10px padding */ 
 }
 
@@ -65,6 +64,9 @@
 	align-items: center; 
 	display: block; 
 	border: black solid 2pt; 
+	border-radius: 10px;
+	background-color: blue;
+
 }
 /* Extra div causes photo to blow up size. Setting height or max-height to 100% or 30% doesnt work */ 
 /* display:block (up-down) also blows up photo, unless max-height set. */ 
