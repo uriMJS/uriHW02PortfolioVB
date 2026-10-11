@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-/* header and nav */
+/* header and nav ========================== */
 .header {
 	padding: 5vw;  /* need large (40px) for 6vw <h1> name on 2 lines */
 	/* height: auto;  /* does not change size */
