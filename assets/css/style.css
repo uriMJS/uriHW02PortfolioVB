@@ -14,13 +14,14 @@
 
 /* header and nav */
 .header {
-	padding: 5px; 
+	padding: 5vw;  /* need large (40px) for 6vw <h1> name on 2 lines */
+	/* height: auto;  /* does not change size */
 	background-color: var(--headfoot-bg-color, black); 
 	color: red;
 }
-.header h1 {
-	/* display: inline-block; */ 
-	margin: 5px; 
+nav > h1 {
+	margin: 2px;
+    font-size: 6vw; /* % of vertical screen width */ 
 }
 
 .navbar {
@@ -35,12 +36,12 @@
 	justify-content: space-between;  /* main axis, brand left, menu right */ 
 	align-items: center;            /* everything vertically centered */
 	padding: 0 5px;
-	height: var(--navbar-height, 60px); 
+	height: var(--navbar-height, 50px); 
 	/* height: auto;  /* photo blows up, buttons differing heights */ 
 	/* float: right; */  /* used float:right so li's are to right of <h1> name */ 
 }
 .xxnavbar .xxlinks {  /* nav ul doesn't work here */ 
-	display: flex 0 1 auto; /* flex-grow, flex-shrink, flex-basis */ 
+	display: flex 0 1 auto; /* flex-grow, flex-shrink, flex-basis - flex 0 is bad syntax */ 
 	list-style: none; 
 }
 .navbar .links {
@@ -50,7 +51,7 @@
   align-items: center; 
   gap: 5px;
   list-style: none; 
-  height: 100%;  /* 100% of navbar height => currently 60. Already has 10px padding */ 
+  height: 100%;  /* 100% of navbar height => currently 50. Already has 10px padding */ 
 }
 /* .header nav ul li {
 	/* background-color: pink;  /* does show up */
@@ -69,6 +70,9 @@
 	border: black solid 2pt; 
 	border-radius: 10px;  /* Makes clickable areas look like buttons */ 
 	background-color: blue;
+}
+.nav-item small {  /* equiv to .header nav ul li .. small */ 
+	font-size: 2vw;
 }
 .xxnav-item-a {  /* header nav ul li a */ 
 	display: flex;
@@ -127,6 +131,9 @@
   #main {  /* can have multiple selectors inside 1 media query */ 
 	background-color: darkgreen; 
   }
+  .heading {
+	  padding: 0px; 
+  }
   .navbar {  /* effectively put name at top, links below name */ 
 	  /* display: block; */
 	  flex-direction: column;  /* up-down display flow */ 
@@ -138,7 +145,7 @@
   }
 } 
 
-/* this is for the smallest screens */ 
+/* This is for the smallest screens */ 
 @media screen and (max-width: 486px) {
   body {
     background-color: powderblue;
@@ -147,21 +154,22 @@
 	background-color: darkblue; 
   }
   .navbar {
-	  padding: 0 2px; 
+	  padding: 0 0px; 
   } 
   .navbar .links {
 	  /* display: block;  /* does make buttons flow up-down, but hard to center */ 
 	  flex-direction: column;  /* up-down display flow */
 	  justify-content: center; 
 	  height: auto; 
-	  width: 30%;  /* 30% possible, auto sucks up entire width */ 
+	  width: auto;  /* 30% possible, auto sucks up entire width on block display */ 
 	  gap: 0px; 
 	  /* text-align: center; /* for block display */
   } 
   .nav-item {
 	  /* display: block; */ 
-	  height: var(--navbar-height-small, 40px);  
-	  width: auto;   // 60px results in uncentered text
+	  height: var(--navbar-height-small, 30px);  
+	  width: auto;   /* 60px results in uncentered text */
+	  margin: 1px;   /* 0 makes all buttons touch, so use 1 instead */ 
 	  text-align: center; 
 	  /* display: flex;
 	  justify-content: space-between;  /* does not center horizontally */ 
