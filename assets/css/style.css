@@ -120,8 +120,19 @@ nav > h1 {
 	max-height: 100%; /* save 35% if a Photo Heading */ 
 }
 .my-image-big {
-	max-width: 80%;
+	max-width: 50%;
 }
+
+/* Main */ 
+.main-section {
+	padding: 20px;
+	/* background-color: powderblue; */
+}
+
+/* Footer */ 
+footer {
+	padding: 10px;
+} 
 
 /* this is for medium screens */  
 @media screen and (max-width: 600px) {
