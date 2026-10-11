@@ -34,7 +34,8 @@
 	justify-content: space-between;  /* main axis, brand left, menu right */ 
 	align-items: center;            /* everything vertically centered */
 	padding: 0 5px;
-	height: var(--navbar-height, 60px);
+	height: var(--navbar-height, 60px); 
+	/* height: auto;  /* photo blows up, buttons differing heights */ 
 	/* float: right; */  /* used float:right so li's are to right of <h1> name */ 
 }
 .xxnavbar .xxlinks {  /* nav ul doesn't work here */ 
@@ -50,23 +51,35 @@
   list-style: none;
   height: 100%;  /* 100% of navbar height => currently 60. Already has 10px padding */ 
 }
-
-
 /* .header nav ul li {
 	/* background-color: pink;  /* does show up */
 /* } */ 
-.nav-item {  /* nav-item equivalent to .header nav ul li */ 
+.nav-item {  /* equiv to .header nav ul li */ 
 	/* width: auto does have varying border, but no height => height goes wild ... arghh */
     /* key seems to be to make parent container (.navbar .links height 100% also */ 	
 	width: auto;   
 	height: 100%; /* .links area height still gets very large with auto, and with 100% */ 
-	margin: 10px; 
-	align-items: center; 
-	display: block; 
+	margin: 5px; 
+	display: flex;  /* seem to need to make align-items: center work */ 
+	align-items: center;  /* center vertically */ 
+	display: block; /* This messed up flex center(vert) */
+	padding: 2px; /* padding inside border */
 	border: black solid 2pt; 
-	border-radius: 10px;
+	border-radius: 10px;  /* Makes clickable areas look like buttons */ 
 	background-color: blue;
-
+}
+.xxnav-item-a {  /* header nav ul li a */ 
+	display: flex;
+	align-items: center;  /* center vertically */ 
+	height: 100%;         /* need some height here to vertically center */ 
+	/* background-color: red;  */
+}
+.center-vert {  /* helper class */ 
+	/* Works with <a> <small(center-vert)> text, <a center-vert> <small> text, and <a center-vert> text */  
+	display: flex;
+	align-items: center;  /* center vertically */ 
+	height: 100%;         /* need some height here to vertically center */ 
+	background-color: pink;  
 }
 /* Extra div causes photo to blow up size. Setting height or max-height to 100% or 30% doesnt work */ 
 /* display:block (up-down) also blows up photo, unless max-height set. */ 
