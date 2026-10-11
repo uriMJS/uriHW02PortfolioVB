@@ -1,7 +1,7 @@
 /* hw 02 Porfolio - MJS 10.7.26 */
 :root { --headfoot-bg-color: green;  /* Global Value */ 
 	    --main-bg-color: powderblue; 
-		--navbar-height: 50px;
+		--navbar-height: 55px;
 		--navbar-height-small: 30px; 
 } 
 
@@ -14,14 +14,16 @@
 
 /* header and nav ========================== */
 .header {
-	padding: 5vw;  /* need large (40px) for 6vw <h1> name on 2 lines */
+	padding: 3vw;  /* need large (40px) for <h1> 5vw name on 2 lines */
+	padding-left: 0vw;   /* Make this 0 so more room on line for Name */
+	padding-right: 0vw;  
 	/* height: auto;  /* does not change size */
 	background-color: var(--headfoot-bg-color, black); 
 	color: red;
 }
-nav > h1 {
+nav > h1 {  /* this is My Name */ 
 	margin: 2px;
-    font-size: 6vw; /* % of vertical screen width */ 
+    font-size: 5vw; /* % of vertical screen width. Fills up header when 2 lines. */ 
 }
 
 .navbar {
@@ -62,6 +64,7 @@ nav > h1 {
 	width: auto;   
 	height: 100%; /* .links area height still gets very large with auto, and with 100% */ 
 	margin: 5px; 
+	padding: 5px; 
 	display: flex;  /* needed to make align-items: center working */ 
 	justify-content: space-between; 
 	align-items: center;  /* center vertically (also requires some height) */ 
@@ -128,12 +131,22 @@ nav > h1 {
 	padding: 20px;
 	/* background-color: powderblue; */
 }
+#project-grid {
+	display: grid; 
+	grid-template-columns: auto auto auto; 
+	background-color: dodgerblue;
+    padding: 5px;
+	margin: 5px; 
+}
+
 
 /* Footer */ 
 footer {
-	padding: 10px;
+	background-color: var(--headfoot-bg-color, black); 
+	padding: 5px;
 } 
 
+/* ------------ Vary output based upon screen width using @media ------------ */
 /* this is for medium screens */  
 @media screen and (max-width: 600px) {
   body {
@@ -153,7 +166,11 @@ footer {
   } 
   .navbar .links { 
 	  height: var(--navbar-height, 60px);   
+	  pading: 1px; 
   }
+  .nav-item {
+	padding: 0; 
+  } 
 } 
 
 /* This is for the smallest screens */ 
@@ -185,8 +202,4 @@ footer {
 	  /* display: flex;
 	  justify-content: space-between;  /* does not center horizontally */ 
   } 
-}
-
-/* Footer */
-footer { background-color: var(--headfoot-bg-color, black); 
 }
