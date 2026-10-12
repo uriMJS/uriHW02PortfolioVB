@@ -135,8 +135,8 @@ nav > h1 {  /* this is My Name */
 	display: grid; 
 	grid-template-columns: auto auto auto; 
 	background-color: purple;
-    padding: 5px;
-	margin: 5px; 
+	padding: 5px;  /* around whole grid */ 
+    gap: 1px; 	 /* between rows and cols */ 
 }
 .project-card {
 	background-color: powderblue; 
