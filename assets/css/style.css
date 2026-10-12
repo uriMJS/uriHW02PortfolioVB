@@ -134,11 +134,20 @@ nav > h1 {  /* this is My Name */
 #project-grid {
 	display: grid; 
 	grid-template-columns: auto auto auto; 
-	background-color: dodgerblue;
+	background-color: purple;
     padding: 5px;
 	margin: 5px; 
 }
-
+.project-card {
+	background-color: powderblue; 
+	border: solid 4pt green;
+	margin: 4pt; 
+	display: block;
+	text-align: center; 
+} 
+.project-card-techs {
+	list-style: none; 
+}
 
 /* Footer */ 
 footer {
