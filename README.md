@@ -1,11 +1,11 @@
 # uriHW02PortfolioVB - Portfolio
 
-A portfolio webpage with CSS and responsive design.
+A portfolio-projects webpage with CSS and responsive design.
 
 ## Links
 
-Deployed HTML Link:
-GitHub Repo Link:
+Deployed HTML Link: "https://urimjs.github.io/uriHW02PortfolioVB/"    
+GitHub Repo Link: "https://github.com/uriMJS/uriHW02PortfolioVB"   
 
 ## Problems
 
@@ -15,19 +15,26 @@ Downloaded git to the C Drive.
 Saving in notepad resulted in /# at beginning of line, instead of #. 
 Eventually downloaded notePad++. Problem fixed. 
 
-&#x20;  
 Biggest problem is that I can't tell what the project entails.  
 Do get pretty good idea of project goals from original HW2 repo, README.md
-
 
 ## Acceptance Criteria
 
 	(aa) follows accessibility standards - alts, better names for html tags, made sure language set.
 	(bb) responsive layout - flexbox, media queries, CSS-variables.
 	(a) presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how  to contact them
-	(b) click one of the links in the navigation THEN the UI scrolls to the corresponding section
+	(b) click - one of the links in the navigation THEN the UI scrolls to the corresponding section
 	(c) click on the link to the section about their work THEN the UI scrolls to a section with titled images of the developer's applications
 	(d) presented with the developer's first application THEN that application's image should be larger in size than the others
 	(e) click on the images of the applications THEN I am taken to that deployed application
 	(f) resize the page or view the site on various screens and devices THEN I am presented with a responsive layout that adapts to my viewport
 
+## Post Project Notes   
+    This result was a huge step up from previous efforts on this project. 
+	Features implemented included:   
+	- display: flex (x2)   
+	- display: wrap  
+	- vw (view width) for fonts and margin-padding  
+	- media selectors (x2 ... 3 total sizes)   
+	- variables var(--variable-name)  
+	
